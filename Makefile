@@ -21,8 +21,8 @@ test:
 	#python -m pytest --nbval notebook.ipynb
 
 lint:
-	wget https://github.com/hadolint/hadolint/releases/download/v1.16.3/hadolint-Linux-x86_64 && \
-    chmod +x hadolint-Linux-x86_64
+	wget -O ./hadolint https://github.com/hadolint/hadolint/releases/download/v1.16.3/hadolint-Linux-x86_64 &&\
+	chmod +x ./hadolint
     #mv hadolint-Linux-x86_64 ~/.devops/bin/
 	# See local hadolint install instructions:   https://github.com/hadolint/hadolint
 	# This is linter for Dockerfiles
